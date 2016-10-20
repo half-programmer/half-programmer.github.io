@@ -1,0 +1,113 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+启动页_CBox发布_央视网(cctv.com)
+</title>
+<meta name="filetype" content="0"> 
+<meta name="publishedtype" content="1"> 
+<meta name="pagetype" content="2">
+<meta name="catalogs" content="PAGE1447140069855374"> 
+
+<meta name=keywords content="cbox2015版静态接口cbox2015版静态接口">
+<meta name=description content="cbox2015版静态接口">
+<script type="text/javascript" src="js/a2.js"></script>
+
+<link type="text/css" rel="stylesheet" href="css/style.css"/><script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+<!--				 
+	var   publishDate ="20151229105240 ";
+//-->
+</script>
+</head>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+
+<body id="bid">
+		<div class="ELMT1447140100107379">
+
+			
+			<div class="w_1000" style="width:1200px;" id="SUBD1447140100111381" >
+			<div class="CboxpcZ13712_qidong_ind01_151110">
+  <div id="slideBox" class="slideBox">
+		<div class="hd">
+			<ul style="*width:160px">
+				
+					<li class="on"></li>
+				
+					<li></li>				
+				
+					<li></li>				
+				
+					<li></li>				
+				
+					<li class="last"></li>
+				
+			</ul>
+		</div>
+		<div class="bd">
+			<ul>
+				
+					<li><a href="#" target = "_blank"><img src="images/1447140908224_957.jpg" /></a></li>
+				
+					<li><a href="#" target = "_blank"><img src="images/1447140902093_757.jpg" /></a></li>
+				
+					<li><a href="#" target = "_blank"><img src="images/1447140896946_986.jpg" /></a></li>
+				
+					<li><a href="#" target = "_blank"><img src="images/1447140887004_242.jpg" /></a></li>
+				
+					<li class="last"><a href="#" target = "_blank"><img src="images/1447140880318_142.jpg" /></a></li>
+				
+			</ul>
+		<a class="tiaoguo" onclick="qt_tiaoguo();">跳过</a>
+		</div>
+	</div>
+  <div class="vspace" style="height:60px"></div>
+  <div class="sub"><a onclick="qt_tiaoguo();">立即体验</a></div>
+</div>
+
+<script>function qt_tiaoguo(){	StartPageWidget.slotWeb();}
+function tiaoguo(){
+	window.external.StartPageEvent("close");
+}
+$(document).ready(function(){
+	$("#slideBox ul").find("li").click(function(){
+		var _index = $(this).index();
+		$(this).addClass("on").siblings().removeClass("on");
+		$(".bd ul").find("li").eq(_index).show().siblings().hide();
+		if (_index == 4) {
+			$(".sub").css({"display":"block"});
+				$(".tiaoguo").css({"display":"none"});
+		}else{
+			$(".sub").css({"display":"none"});
+			$(".tiaoguo").css({"display":"block"});
+		};
+	});
+	index = 0;
+	var itime = setInterval(function(){
+		index++;
+		var _length = $("#slideBox ul").find("li").length;
+		$("#slideBox ul").find("li").eq(index).addClass("on").siblings().removeClass("on");
+		$(".bd ul").find("li").eq(index).show().siblings().hide();
+		if (index == 4) {
+			$(".sub").css({"display":"block"});
+			$(".tiaoguo").css({"display":"none"});
+			
+		}else{
+			$(".sub").css({"display":"none"});
+			$(".tiaoguo").css({"display":"block"});
+		};
+		if (index == 4) {
+			clearInterval(itime);
+		};
+		
+	},3000);
+});
+</script>
+			</div>
+			
+
+</div>
+<div style="clear:both"></div>
+</body>
+</html>
